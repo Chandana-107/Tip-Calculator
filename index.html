@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="container" role="main" aria-labelledby="title">
+        <h1 id="title">TIP CALCULATOR</h1>
+        <div class="wrapper">
+
+            <label for="amount">Bill Amount</label>
+            <input type="text" id="amount" placeholder="Amount to be paid" aria-describedby="amount-error" aria-required="true" />
+            <div id="amount-error" class="error-message" aria-live="polite"></div>
+
+            <label for="services">How was the service?</label>
+            <select id="services" aria-describedby="service-error" aria-required="true">
+                <option value="" selected disabled hidden>Select</option>
+                <option value="0.25">25% - Top Notch</option>
+                <option value="0.20">20% - Excellent</option>
+                <option value="0.15">15% - Good</option>
+                <option value="0.10">10% - Bad</option>
+                <option value="0.05">5% - Worst</option>
+            </select>
+            <div id="service-error" class="error-message" aria-live="polite"></div>
+
+            <label for="persons">Total number of persons</label>
+            <input type="text" id="persons" placeholder="Number of people sharing the bill" aria-describedby="persons-error" aria-required="true" />
+            <div id="persons-error" class="error-message" aria-live="polite"></div>
+
+            <div class="buttons">
+                <button id="calculate" type="button">Calculate</button>
+                <button id="reset" type="button">Reset</button>
+            </div>
+        </div>
+
+        <div class="tip" aria-live="polite" aria-atomic="true">
+            <p>Tip Amount</p>
+            <span id="total">0</span>₹
+            <span id="each">each</span>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+body {
+    background-color: #001f4f;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 400px;
+    width: 90%;
+    background-color: #fff;
+    margin: 50px auto;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    background-color: #ff851b;
+    color: #fff;
+    font-weight: 100;
+    font-size: 22px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px 20px 0 0;
+    margin: 0 -20px 20px -20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #0074d9;
+    padding: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    border-color: #39cccc;
+    outline: none;
+}
+
+select {
+    width: 100% !important;
+}
+
+button {
+    margin: 10px 5px 0 0;
+    width: 48%;
+    height: 45px;
+    background-color: #39cccc;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2aa3a3;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tip {
+    text-align: center;
+    font-size: 18px;
+    display: none;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #0074d9;
+}
+
+.error-message {
+    color: #ff4136;
+    font-size: 14px;
+    height: 18px;
+    margin-top: 2px;
+    min-height: 18px;
+    transition: opacity 0.3s ease;
+}
